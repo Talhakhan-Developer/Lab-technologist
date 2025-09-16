@@ -35,17 +35,16 @@ const LabTabs = () => {
   return (
     <div className="flex flex-col h-full w-full">
       {/* Tab Navigation */}
-      {/* Tab Navigation */}
-<div className="flex flex-wrap bg-white border-b border-gray-200">
+<div className="flex flex-wrap bg-white border-b border-gray-200 ">
   {tabs.map((tab) => (
     <button
       key={tab.id}
       onClick={() => setActiveTab(tab.id)}
-      className={`flex-1 flex items-center justify-center gap-2 py-3 font-medium text-sm transition-colors duration-200 min-w-0
+      className={`flex-1 flex items-center justify-center gap-3 py-6 font-medium text-sm transition-colors duration-200 min-w-0
         ${
           activeTab === tab.id
-            ? 'text-blue-600 border-b-2 border-blue-600 bg-blue-50'
-            : 'text-gray-600 hover:text-blue-500 hover:bg-gray-50'
+            ? 'text-blue-600 border-b-2 border-orange-600 bg-blue-50'
+            : 'text-gray-600 hover:text-orange-500 hover:bg-gray-50'
         }`}
     >
       <span>{tab.icon}</span>
